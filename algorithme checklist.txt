@@ -1,0 +1,26 @@
+algorithme checklist
+VAR
+i,j,words,vowels,nb:integer;
+sentence:char;
+Begin
+write("give a sentence that ends with a point.");
+read(sentence);
+\*The length of the sentence*\
+nb:=sentence.length;
+write(nb);
+\*The number of words in the sentence*\
+words:=1;
+for i:=1 to sentence.length i++ do 
+begin for
+if (sentence[i]==" ") do
+words++;
+end for
+write("he number of words in the sentence is" words);
+\*The number of vowels in the sentence*\
+for j:=1 to sentence.length j++ do
+begin for
+if(sentence[j]=="a")OR(sentence[j]=="e")OR(sentence[j]=="i")OR(sentence[j]=="o")OR(sentence[j]=="u")OR(sentence[j]=="y")do
+vowels++;
+end for 
+write("The number of vowels in the sentence is "vowels);
+End
